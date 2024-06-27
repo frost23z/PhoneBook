@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../Styles/Login.css" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.frost23z.phonebook.Login.login">
+   <VBox alignment="CENTER" prefHeight="400.0" prefWidth="200.0" styleClass="left_container"
+         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <FontAwesomeIconView glyphName="ADDRESS_BOOK" size="50"/>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Book"/>
+   </VBox>
+   <VBox alignment="CENTER" layoutX="250.0" layoutY="100.0" prefHeight="360.0" prefWidth="350.0"
+         styleClass="right_container" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="230.0"
+         AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <VBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="350.0" styleClass="info_container">
+         <Label text="Welcome"/>
+         <Label text="Login to your account"/>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="350.0" styleClass="input_container">
+         <TextField fx:id="tf_username" promptText="Your Username"/>
+         <PasswordField fx:id="pf_password" promptText="Your Password"/>
+      </VBox>
+      <Button fx:id="bt_login" mnemonicParsing="false" prefWidth="76.0" text="Login"/>
+      <HBox alignment="CENTER" prefHeight="13.0" prefWidth="350.0" spacing="15.0">
+         <Label styleClass="info_text" text="Don't Have an Account?"/>
+         <Button fx:id="bt_register" mnemonicParsing="false" text="Register"/>
+      </HBox>
+   </VBox>
+</AnchorPane>
