@@ -9,7 +9,7 @@ module com.frost23z.phonebook {
 
     opens com.frost23z.phonebook to javafx.fxml;
     exports com.frost23z.phonebook;
-    exports com.frost23z.phonebook.Login;
+    exports com.frost23z.phonebook.Controller.Authentication;
     exports com.frost23z.phonebook.Models;
     exports com.frost23z.phonebook.Views;
 }

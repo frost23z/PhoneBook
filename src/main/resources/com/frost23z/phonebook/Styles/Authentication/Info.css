@@ -1,0 +1,12 @@
+.root {
+    -fx-background-color: #1b3c1b;
+}
+
+Text {
+    -fx-font-size: 2em;
+    -fx-fill: #ffffff;
+}
+
+FontAwesomeIconView {
+    -fx-fill: #ebffa5;
+}

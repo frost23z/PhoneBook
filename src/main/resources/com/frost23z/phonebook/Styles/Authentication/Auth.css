@@ -1,0 +1,43 @@
+.root {
+    -fx-background-color: #eeeeee;
+    -fx-spacing: 15;
+    -fx-padding: 20;
+}
+
+.spacer {
+    -fx-spacing: 15;
+}
+
+Label {
+    -fx-font-size: 2em;
+    -fx-text-fill: #2b442b;
+}
+
+TextField, PasswordField {
+    -fx-font-size: 1.3em;
+    -fx-text-fill: #2b442b;
+    -fx-border-color: #141f14;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+Button {
+    -fx-font-size: 1.1em;
+    -fx-background-color: #1b3c1b;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, #6e956e, 10, 0, 0, 0);
+    -fx-pref-width: 70;
+    -fx-pref-height: 30;
+
+}
+
+Button:hover {
+    -fx-background-color: #1f4b1f;
+    -fx-cursor: hand;
+}
+
+.alt_label {
+    -fx-font-size: 1.3em;
+}

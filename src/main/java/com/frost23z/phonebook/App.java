@@ -7,6 +7,10 @@ import javafx.stage.Stage;
 
 public class App extends Application {
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     @Override
     public void start(Stage stage) throws Exception {
         stage.setTitle("Phone Book");
@@ -14,9 +18,5 @@ public class App extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 }

@@ -40,10 +40,6 @@ dependencies {
     }
     implementation("org.xerial:sqlite-jdbc:3.46.0.0")
     implementation("de.jensd:fontawesomefx-fontawesome:4.7.0-9.1.2")
-    implementation("de.jensd:fontawesomefx-commons:9.1.2")
-
-
-
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
