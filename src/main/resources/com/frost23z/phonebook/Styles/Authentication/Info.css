@@ -10,9 +10,3 @@
 .info FontAwesomeIconView {
     -fx-fill: #ebffa5;
 }
-
-/* Authentication/Auth.css */
-
-.hbox > .vbox {
-    -fx-hgrow: always;
-}

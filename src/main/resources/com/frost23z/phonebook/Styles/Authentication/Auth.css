@@ -4,10 +4,6 @@
     -fx-padding: 20;
 }
 
-.auth .spacer {
-    -fx-spacing: 15;
-}
-
 .auth Label {
     -fx-font-size: 2em;
     -fx-text-fill: #2b442b;
@@ -40,4 +36,25 @@
 
 .auth .alt_label {
     -fx-font-size: 1.3em;
+}
+
+.error {
+    -fx-font-size: 1em;
+    -fx-text-fill: #ff0000;
+}
+
+.spacer2 {
+    -fx-spacing: 2;
+}
+
+.spacer5 {
+    -fx-spacing: 15;
+}
+
+.spacer10 {
+    -fx-spacing: 10;
+}
+
+.spacer15 {
+    -fx-spacing: 15;
 }

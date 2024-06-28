@@ -2,8 +2,6 @@ package com.frost23z.phonebook;
 
 import com.frost23z.phonebook.Views.ViewFactory;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class App extends Application {

@@ -1,10 +1,7 @@
 package com.frost23z.phonebook.Views;
 
-import com.frost23z.phonebook.Controller.Authentication.Info;
-import com.frost23z.phonebook.Controller.Authentication.Login;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.SplitPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -13,7 +10,8 @@ import javafx.stage.Stage;
 public class ViewFactory {
     private AnchorPane loginContainer;
 
-    public ViewFactory() {}
+    public ViewFactory() {
+    }
 
     public void loginView() {
         try {
