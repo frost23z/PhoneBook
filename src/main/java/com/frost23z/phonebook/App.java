@@ -1,5 +1,6 @@
 package com.frost23z.phonebook;
 
+import com.frost23z.phonebook.Views.ViewFactory;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -13,10 +14,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        stage.setTitle("Phone Book");
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXML/Login.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
+        ViewFactory viewFactory = new ViewFactory();
+        viewFactory.loginView();
     }
 }

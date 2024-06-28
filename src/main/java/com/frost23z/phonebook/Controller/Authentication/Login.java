@@ -17,6 +17,9 @@ public class Login implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        
+        bt_login.setOnAction(e -> {
+            bt_login.setText("Logging in...");
+            System.out.println("Login");
+        });
     }
 }

@@ -9,4 +9,5 @@ public class Register {
     public PasswordField tf_reg_pass;
     public Button bt_reg;
     public Button bt_swith_login;
+    public PasswordField tf_reg_repass;
 }

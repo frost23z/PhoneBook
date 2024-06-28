@@ -1,12 +1,18 @@
-.root {
+.info {
     -fx-background-color: #1b3c1b;
 }
 
-Text {
+.info Text {
     -fx-font-size: 2em;
     -fx-fill: #ffffff;
 }
 
-FontAwesomeIconView {
+.info FontAwesomeIconView {
     -fx-fill: #ebffa5;
+}
+
+/* Authentication/Auth.css */
+
+.hbox > .vbox {
+    -fx-hgrow: always;
 }
