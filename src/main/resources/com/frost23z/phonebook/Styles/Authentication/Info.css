@@ -1,12 +1,16 @@
 .info {
-    -fx-background-color: #1b3c1b;
+    -fx-background-color: linear-gradient(to bottom right, #667eea, #764ba2);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0.3, -5, 0);
 }
 
 .info Text {
-    -fx-font-size: 2em;
-    -fx-fill: #ffffff;
+    -fx-font-size: 2.5em;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0.5, 0, 2);
 }
 
 .info FontAwesomeIconView {
-    -fx-fill: #ebffa5;
+    -fx-fill: #ffeaa7;
+    -fx-effect: dropshadow(gaussian, rgba(255, 234, 167, 0.5), 8, 0.7, 0, 3);
 }

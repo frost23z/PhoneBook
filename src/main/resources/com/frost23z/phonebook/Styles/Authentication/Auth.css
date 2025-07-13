@@ -1,50 +1,78 @@
 .auth {
-    -fx-background-color: #eeeeee;
-    -fx-spacing: 15;
-    -fx-padding: 20;
+    -fx-background-color: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+    -fx-spacing: 20;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 20, 0.3, 0, 5);
 }
 
 .auth Label {
-    -fx-font-size: 2em;
-    -fx-text-fill: #2b442b;
+    -fx-font-size: 2.2em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0.3, 0, 1);
 }
 
 .auth TextField, .auth PasswordField {
     -fx-font-size: 1.3em;
-    -fx-text-fill: #2b442b;
-    -fx-border-color: #141f14;
-    -fx-border-width: 1px;
-    -fx-border-radius: 5px;
+    -fx-text-fill: #2c3e50;
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 12 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.3, 0, 2);
+    -fx-transition: all 0.3s ease;
+}
+
+.auth TextField:focused, .auth PasswordField:focused {
+    -fx-border-color: #3498db;
+    -fx-effect: dropshadow(gaussian, rgba(52, 152, 219, 0.3), 8, 0.5, 0, 2);
+    -fx-scale-y: 1.02;
 }
 
 .auth Button {
-    -fx-font-size: 1.1em;
-    -fx-background-color: #1b3c1b;
-    -fx-text-fill: #ffffff;
-    -fx-border-radius: 5px;
-    -fx-background-radius: 5px;
-    -fx-effect: dropshadow(three-pass-box, #6e956e, 10, 0, 0, 0);
-    -fx-pref-width: 70;
-    -fx-pref-height: 30;
-
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(52, 152, 219, 0.4), 8, 0.5, 0, 3);
+    -fx-pref-width: 120;
+    -fx-pref-height: 45;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
 }
 
 .auth Button:hover {
-    -fx-background-color: #1f4b1f;
-    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(to bottom, #2980b9, #3498db);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(52, 152, 219, 0.6), 12, 0.7, 0, 5);
+}
+
+.auth Button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-effect: dropshadow(gaussian, rgba(52, 152, 219, 0.3), 5, 0.3, 0, 2);
 }
 
 .auth .alt_label {
     -fx-font-size: 1.3em;
+    -fx-text-fill: #7f8c8d;
+    -fx-font-weight: normal;
 }
 
 .error {
-    -fx-font-size: 1em;
-    -fx-text-fill: #ff0000;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: #e74c3c;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(231, 76, 60, 0.3), 3, 0.5, 0, 1);
 }
 
 .spacer2 {
-    -fx-spacing: 2;
+    -fx-spacing: 5;
 }
 
 .spacer5 {
@@ -52,9 +80,9 @@
 }
 
 .spacer10 {
-    -fx-spacing: 10;
+    -fx-spacing: 12;
 }
 
 .spacer15 {
-    -fx-spacing: 15;
+    -fx-spacing: 18;
 }

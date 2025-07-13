@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21"
+            fx:controller="com.frost23z.phonebook.Controller.PhoneBook.PhoneBookMain"
+            styleClass="main-container" stylesheets="@../../Styles/PhoneBook/Main.css">
+
+    <top>
+        <VBox styleClass="header">
+            <HBox alignment="CENTER_LEFT" spacing="15.0" styleClass="title-bar">
+                <FontAwesomeIconView glyphName="ADDRESS_BOOK" size="30" styleClass="header-icon"/>
+                <Label text="Phone Book Manager" styleClass="app-title"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button fx:id="bt_logout" text="Logout" styleClass="logout-btn">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" size="14"/>
+                    </graphic>
+                </Button>
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="search-bar">
+                <FontAwesomeIconView glyphName="SEARCH" size="16" styleClass="search-icon"/>
+                <TextField fx:id="tf_search" promptText="Search contacts..."
+                           styleClass="search-field" HBox.hgrow="ALWAYS"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox styleClass="content-area">
+            <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="toolbar">
+                <Button fx:id="bt_add" text="Add Contact" styleClass="action-btn primary">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" size="14"/>
+                    </graphic>
+                </Button>
+                <Button fx:id="bt_edit" text="Edit" styleClass="action-btn secondary">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="EDIT" size="14"/>
+                    </graphic>
+                </Button>
+                <Button fx:id="bt_delete" text="Delete" styleClass="action-btn danger">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="TRASH" size="14"/>
+                    </graphic>
+                </Button>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="lb_total" text="Total Contacts: 0" styleClass="contact-count"/>
+            </HBox>
+
+            <TableView fx:id="table_contacts" styleClass="contacts-table" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="col_name" text="Name" prefWidth="200.0" styleClass="table-column"/>
+                    <TableColumn fx:id="col_phone" text="Phone" prefWidth="150.0" styleClass="table-column"/>
+                    <TableColumn fx:id="col_email" text="Email" prefWidth="200.0" styleClass="table-column"/>
+                    <TableColumn fx:id="col_address" text="Address" prefWidth="250.0" styleClass="table-column"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+</BorderPane>

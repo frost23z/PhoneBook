@@ -1,0 +1,238 @@
+.main-container {
+    -fx-background-color: linear-gradient(to bottom right, #f093fb, #f5576c);
+}
+
+.header {
+    -fx-background-color: linear-gradient(to bottom right, #667eea, #764ba2);
+    -fx-padding: 20 25;
+    -fx-spacing: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0.5, 0, 5);
+}
+
+.title-bar {
+    -fx-padding: 0 0 12 0;
+}
+
+.app-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0.5, 0, 2);
+}
+
+.header-icon {
+    -fx-fill: #ffeaa7;
+    -fx-effect: dropshadow(gaussian, rgba(255, 234, 167, 0.7), 8, 0.8, 0, 3);
+}
+
+.logout-btn {
+    -fx-background-color: linear-gradient(to bottom, #fd79a8, #e84393);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 18;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(232, 67, 147, 0.4), 8, 0.6, 0, 3);
+}
+
+.logout-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #e84393, #fd79a8);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(232, 67, 147, 0.6), 12, 0.8, 0, 5);
+}
+
+.logout-btn .glyph-icon {
+    -fx-fill: white;
+}
+
+.search-bar {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-radius: 12;
+    -fx-padding: 12 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.3, 0, 2);
+}
+
+.search-icon {
+    -fx-fill: #ffeaa7;
+    -fx-effect: dropshadow(gaussian, rgba(255, 234, 167, 0.5), 3, 0.5, 0, 1);
+}
+
+.search-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.8);
+    -fx-font-size: 15px;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 8 0;
+}
+
+.search-field:focused {
+    -fx-border-color: #ffeaa7;
+    -fx-border-width: 0 0 2 0;
+    -fx-effect: dropshadow(gaussian, rgba(255, 234, 167, 0.5), 5, 0.5, 0, 2);
+}
+
+.content-area {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 20 20 0 0;
+    -fx-padding: 25;
+    -fx-spacing: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.3, 0, -5);
+}
+
+.toolbar {
+    -fx-padding: 0 0 15 0;
+}
+
+.action-btn {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.4, 0, 2);
+}
+
+.action-btn.primary {
+    -fx-background-color: linear-gradient(to bottom, #00b894, #00a085);
+    -fx-text-fill: white;
+}
+
+.action-btn.primary:hover {
+    -fx-background-color: linear-gradient(to bottom, #00a085, #00b894);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0, 184, 148, 0.4), 8, 0.6, 0, 4);
+}
+
+.action-btn.primary .glyph-icon {
+    -fx-fill: white;
+}
+
+.action-btn.secondary {
+    -fx-background-color: linear-gradient(to bottom, #74b9ff, #0984e3);
+    -fx-text-fill: white;
+}
+
+.action-btn.secondary:hover {
+    -fx-background-color: linear-gradient(to bottom, #0984e3, #74b9ff);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(116, 185, 255, 0.4), 8, 0.6, 0, 4);
+}
+
+.action-btn.secondary:disabled {
+    -fx-background-color: #ddd;
+    -fx-text-fill: #999;
+    -fx-opacity: 0.7;
+    -fx-effect: none;
+}
+
+.action-btn.secondary .glyph-icon {
+    -fx-fill: white;
+}
+
+.action-btn.danger {
+    -fx-background-color: linear-gradient(to bottom, #fd79a8, #e84393);
+    -fx-text-fill: white;
+}
+
+.action-btn.danger:hover {
+    -fx-background-color: linear-gradient(to bottom, #e84393, #fd79a8);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(232, 67, 147, 0.4), 8, 0.6, 0, 4);
+}
+
+.action-btn.danger:disabled {
+    -fx-background-color: #f8d7da;
+    -fx-text-fill: #721c24;
+    -fx-opacity: 0.7;
+    -fx-effect: none;
+}
+
+.action-btn.danger .glyph-icon {
+    -fx-fill: white;
+}
+
+.contact-count {
+    -fx-font-size: 15px;
+    -fx-text-fill: #636e72;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0.3, 0, 1);
+}
+
+.contacts-table {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.4, 0, 5);
+}
+
+.contacts-table .column-header-background {
+    -fx-background-color: linear-gradient(to right, #f8f9fa, #e9ecef);
+    -fx-background-radius: 12 12 0 0;
+}
+
+.contacts-table .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d3436;
+    -fx-font-size: 15px;
+    -fx-padding: 15 20;
+}
+
+.contacts-table .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: #e9ecef;
+    -fx-border-width: 0 0 1 0;
+}
+
+.contacts-table .table-row-cell:hover {
+    -fx-background-color: #f8f9fa;
+}
+
+.contacts-table .table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, #74b9ff, #0984e3);
+    -fx-text-fill: white;
+}
+
+.contacts-table .table-cell {
+    -fx-padding: 15 20;
+    -fx-font-size: 14px;
+    -fx-text-fill: #2d3436;
+}
+
+.contacts-table .table-row-cell:selected .table-cell {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.contacts-table:focused .table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, #0984e3, #74b9ff);
+}
+
+/* Enhanced Scrollbar styling */
+.contacts-table .scroll-bar:vertical {
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 8;
+    -fx-padding: 3;
+}
+
+.contacts-table .scroll-bar:vertical .track {
+    -fx-background-color: #e9ecef;
+    -fx-background-radius: 8;
+}
+
+.contacts-table .scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to right, #74b9ff, #0984e3);
+    -fx-background-radius: 8;
+}
+
+.contacts-table .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: linear-gradient(to right, #0984e3, #74b9ff);
+}
